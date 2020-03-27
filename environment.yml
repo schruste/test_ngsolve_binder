@@ -1,0 +1,10 @@
+name: ngsolve-test-environment
+channels:
+  - conda-forge
+  - ngsolve
+dependencies:
+  - netgen
+  - ngsolve
+  - numpy
+  - matplotlib
+  - scipy
