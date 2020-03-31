@@ -1,2 +1,2 @@
-jupyter nbextension enable --py jupyter-js-widgets
+jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py itkwidgets
