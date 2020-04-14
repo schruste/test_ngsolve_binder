@@ -1,3 +1,19 @@
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py itkwidgets
 pip install git+https://github.com/regpy/regpy.git@release --user --upgrade
+
+git clone https://github.com/ngsxfem/ngsxfem.git
+cd ngsxfem
+        
+INSTLOCATION=$(pwd)/install
+        
+mkdir install
+mkdir build
+cd build
+
+cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION} -DBUILD_NGSOLVE=OFF -DCMAKE_CXX_COMPILER=ngscxx -DCMAKE_LINKER=ngsld
+make
+make install
+
+export PYTHONPATH="$PYTHONPATH:${INSTLOCATION}/lib/python3.8/site-packages"
+        
