@@ -13,3 +13,5 @@ dependencies:
   - vtk
   - pyvista
   - panel
+  - cmake
+  - clang
