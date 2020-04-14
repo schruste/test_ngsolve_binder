@@ -1,7 +1,9 @@
 name: ngsolve-test-environment
 channels:
+  - anaconda
   - conda-forge
   - ngsolve
+  - pyviz
 dependencies:
   - ngsolve-nogui
   - numpy
@@ -9,3 +11,5 @@ dependencies:
   - scipy
   - itkwidgets
   - vtk
+  - pyvista
+  - panel
