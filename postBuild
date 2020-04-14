@@ -16,5 +16,5 @@ cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION} -DBUILD_NGSOLVE=OFF -DCMAKE_CXX
 make
 make install
 
-export PYTHONPATH="$PYTHONPATH:${INSTLOCATION}/lib/python3.8/site-packages"
+export PYTHONPATH="$PYTHONPATH:${INSTLOCATION}/lib/python3.8/site-packages:/home/jovyan/.local/lib/python3.7/site-packages"
         
