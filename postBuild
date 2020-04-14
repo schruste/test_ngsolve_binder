@@ -1,3 +1,5 @@
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py itkwidgets
 pip install git+https://github.com/regpy/regpy.git@release --user --upgrade
+export PYTHONPATH="$PYTHONPATH:/home/jovyan/.local/lib/python3.7/site-packages"
+        
