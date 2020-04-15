@@ -12,7 +12,7 @@ dependencies:
   - lxml
   - cmake
   - clang
-  - pybind11 
+  - anaconda::pybind11 
   - numpy
   - scipy
   - matplotlib
