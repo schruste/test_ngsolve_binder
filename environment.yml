@@ -1,6 +1,5 @@
 name: ngs-environment
 channels:
-  - anaconda
   - conda-forge
   - ngsolve
   - pyviz
