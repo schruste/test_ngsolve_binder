@@ -1,18 +1,12 @@
-#jupyter nbextension enable --py widgetsnbextension
-#jupyter nbextension enable --py itkwidgets
-        
 git clone https://github.com/ngsxfem/ngsxfem.git .ngsxfem
 cd .ngsxfem
         
 INSTLOCATION=/home/jovyan/.local
         
-mkdir install
 mkdir build
 cd build
 
 cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION} -DBUILD_NGSOLVE=OFF -DCMAKE_CXX_COMPILER=ngscxx -DCMAKE_LINKER=ngsld -DUSE_GUI=OFF
 make
 make install
-
-export PYTHONPATH="$PYTHONPATH/home/jovyan/.local/lib/python3.7/site-packages"
         
