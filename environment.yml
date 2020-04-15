@@ -16,6 +16,7 @@ dependencies:
   - numpy
   - scipy
   - matplotlib
+  - rise 
   - pip:
     - git+git://github.com/pyvista/pyvista@master
     - pyct
