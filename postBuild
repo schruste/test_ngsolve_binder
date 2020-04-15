@@ -1,12 +1,10 @@
-jupyter nbextension enable --py widgetsnbextension
-jupyter nbextension enable --py itkwidgets
+#jupyter nbextension enable --py widgetsnbextension
+#jupyter nbextension enable --py itkwidgets
         
-pip install git+https://github.com/regpy/regpy.git@release --user --upgrade
-
-git clone https://github.com/ngsxfem/ngsxfem.git
-cd ngsxfem
+git clone https://github.com/ngsxfem/ngsxfem.git .ngsxfem
+cd .ngsxfem
         
-INSTLOCATION=$(pwd)/install
+INSTLOCATION=/home/jovyan/.local
         
 mkdir install
 mkdir build
@@ -16,5 +14,5 @@ cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION} -DBUILD_NGSOLVE=OFF -DCMAKE_CXX
 make
 make install
 
-export PYTHONPATH="$PYTHONPATH:${INSTLOCATION}/lib/python3.8/site-packages:/home/jovyan/.local/lib/python3.7/site-packages"
+export PYTHONPATH="$PYTHONPATH/home/jovyan/.local/lib/python3.7/site-packages"
         
