@@ -1,5 +1,6 @@
 name: ngs-environment
 channels:
+  - anaconda
   - conda-forge
   - ngsolve
   - pyviz
@@ -13,13 +14,13 @@ dependencies:
   - cmake
   - clang
   - pybind11 
+  - numpy
+  - scipy
+  - matplotlib
   - pip:
     - git+git://github.com/pyvista/pyvista@master
-    - scipy
-    - numpy
     - pyct
     - git+https://github.com/regpy/regpy.git@release
-    - matplotlib
 
         
 # - python=3.7
