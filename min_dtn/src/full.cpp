@@ -115,19 +115,19 @@ void eval_dtn_fct(Eigen::Ref<ComplexMatrix> Lone,
 namespace py = pybind11;
 
 PYBIND11_MODULE(min_dtn, m) {
-    cout << "importing min_dtn"  << endl;
-    // m.doc() = R"pbdoc(
-    //     Pybind11 example plugin
-    //     -----------------------
-    //     .. currentmodule:: cmake_example
-    //     .. autosummary::
-    //        :toctree: _generate
-    // )pbdoc";
+  std::cout << "importing min_dtn"  << std::endl;
+  // m.doc() = R"pbdoc(
+  //     Pybind11 example plugin
+  //     -----------------------
+  //     .. currentmodule:: cmake_example
+  //     .. autosummary::
+  //        :toctree: _generate
+  // )pbdoc";
 
-    m.def("test",[] ( ) {
-                   std::cout << " test " << std::endl;
-                 }
-      ); 
+  m.def("test",[] ( ) {
+                 std::cout << " test " << std::endl;
+               }
+    ); 
       
 // #ifdef VERSION_INFO
 //     m.attr("__version__") = VERSION_INFO;
