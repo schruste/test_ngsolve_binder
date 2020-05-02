@@ -1,4 +1,6 @@
 name: ceres-environment
+channels:
+  - conda-forge
 dependencies:
   - python
   - clang
@@ -7,3 +9,4 @@ dependencies:
   - scipy
   - matplotlib
   - rise 
+  - ceres-solver

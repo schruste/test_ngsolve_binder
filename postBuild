@@ -1,21 +1,20 @@
 
 INSTLOCATION=/home/jovyan/.local
 
-wget http://ceres-solver.org/ceres-solver-1.14.0.tar.gz
-tar zxf ceres-solver-1.14.0.tar.gz
-cd ceres-solver-1.14.0        
-mkdir build
-cd build     
-cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
-make -j3
-make test
-make install
-cd ../..
+# wget http://ceres-solver.org/ceres-solver-1.14.0.tar.gz
+# tar zxf ceres-solver-1.14.0.tar.gz
+# cd ceres-solver-1.14.0        
+# mkdir build
+# cd build     
+# cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
+# make -j3
+# make install
+# cd ../..
 
 cd min_dtn        
 mkdir build
 cd build
-cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION} -DCERES_INCLUDE_DIRS=/home/jovyan/.local/include
+cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
 make
 make install
 
