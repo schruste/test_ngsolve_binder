@@ -123,14 +123,9 @@ PYBIND11_MODULE(min_dtn, m) {
            :toctree: _generate
     )pbdoc";
 
-    m.def("eval_dtn_fct",[] ( Eigen::Ref<ComplexMatrix> Lone,
-                              Eigen::Ref<ComplexMatrix> Ltwo,
-                              Eigen::Ref<RealVector> lam,
-                              Eigen::Ref<ComplexVector> val
-            ) {
-                           eval_dtn_fct(Lone,Ltwo,lam,val);
-                         }, 
-          py::arg("Lone"),py::arg("Ltwo"),py::arg("lam"),py::arg("val")
+    m.def("test",[] ( ) {
+                   std::cout << " test " << std::endl;
+                 }
       ); 
       
 #ifdef VERSION_INFO
