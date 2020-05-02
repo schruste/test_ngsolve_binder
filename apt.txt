@@ -1,2 +1,7 @@
 libgl1-mesa-dev
 xvfb
+cmake
+libgoogle-glog-dev
+libatlas-base-dev
+libeigen3-dev
+libsuitesparse-dev
