@@ -17,11 +17,11 @@ cd build
 cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
 make
         
-ls -al
+# ls -al
         
-export PYTHONPATH=$PYTHONPATH:/home/jovyan/min_dtn
+export PYTHONPATH=$PYTHONPATH:/home/jovyan/min_dtn/build
 
-make install        
+# make install        
        
 
 
