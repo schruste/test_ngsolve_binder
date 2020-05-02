@@ -16,6 +16,13 @@ mkdir build
 cd build
 cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
 make
-make install
+        
+ls -al
+        
+export PYTHONPATH=$PYTHONPATH:/home/jovyan/min_dtn
+
+make install        
+       
+
 
         
