@@ -9,5 +9,5 @@ pybind11_add_module(min_dtn src/full.cpp)
 
 target_link_libraries(min_dtn PRIVATE ${CERES_LIBRARIES})
 
-find_package (Python3 COMPONENTS Interpreter REQUIRED)
-install(TARGETS min_dtn DESTINATION Python3_LIBRARY_DIRS)
+# find_package (Python3 COMPONENTS Interpreter REQUIRED)
+# install(TARGETS min_dtn DESTINATION Python3_LIBRARY_DIRS)
