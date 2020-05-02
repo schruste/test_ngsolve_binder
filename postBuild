@@ -11,15 +11,17 @@ INSTLOCATION=/home/jovyan/.local
 # make install
 # cd ../..
 
-cd min_dtn        
-mkdir build
-cd build
-cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
-make
+cd min_dtn
+./setup.py install --user
+                
+# mkdir build
+# cd build
+# cmake ../ -DCMAKE_INSTALL_PREFIX=${INSTLOCATION}
+# make
         
 # ls -al
         
-export PYTHONPATH=$PYTHONPATH:/home/jovyan/min_dtn/build
+# export PYTHONPATH=$PYTHONPATH:/home/jovyan/min_dtn/build
 
 # make install        
        
