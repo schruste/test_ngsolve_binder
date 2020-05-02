@@ -1,0 +1,3 @@
+[submodule "min_dtn/pybind11"]
+	path = min_dtn/src/pybind11
+	url = https://github.com/pybind/pybind11.git
