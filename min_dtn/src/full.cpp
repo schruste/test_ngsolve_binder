@@ -123,10 +123,6 @@ PYBIND11_MODULE(min_dtn, m) {
            :toctree: _generate
     )pbdoc";
 
-    m.def("solve_problem", &solve_problem, R"pbdoc(
-        Some doctring
-    )pbdoc");
-
     m.def("eval_dtn_fct",[] ( Eigen::Ref<ComplexMatrix> Lone,
                               Eigen::Ref<ComplexMatrix> Ltwo,
                               Eigen::Ref<RealVector> lam,
