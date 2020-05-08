@@ -28,3 +28,6 @@ cd min_dtn
 
 
         
+apt-add-repository universe
+add-apt-repository ppa:ngsolve/nightly -y
+apt-get install ngsolve
