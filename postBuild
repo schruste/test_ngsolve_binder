@@ -28,7 +28,7 @@ cd min_dtn
 
 
         
-export BASEDIR=~/ngsuite
+export BASEDIR=/home/jovyan/ngsuite
 mkdir -p $BASEDIR
 cd $BASEDIR
 git clone https://github.com/NGSolve/ngsolve.git ngsolve-src
