@@ -28,6 +28,18 @@ cd min_dtn
 
 
         
-apt-add-repository universe
-add-apt-repository ppa:ngsolve/nightly -y
-apt-get install ngsolve
+export BASEDIR=~/ngsuite
+mkdir -p $BASEDIR
+cd $BASEDIR
+git clone https://github.com/NGSolve/ngsolve.git ngsolve-src
+cd $BASEDIR/ngsolve-src
+git submodule update --init --recursive
+mkdir $BASEDIR/ngsolve-build
+mkdir $BASEDIR/ngsolve-install
+cd $BASEDIR/ngsolve-build
+cmake -DCMAKE_INSTALL_PREFIX=${BASEDIR}/ngsolve-install ${BASEDIR}/ngsolve-src -DUSE_GUI=OFF
+make
+make install
+export NETGENDIR="${BASEDIR}/ngsolve-install/bin"
+export PATH=$NETGENDIR:$PATH
+export PYTHONPATH=$NETGENDIR/../`python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1,0,''))"`
